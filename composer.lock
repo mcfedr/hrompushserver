@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "679993b1ded2470da44ca9b9e883bd1d",
+    "hash": "ea3a0b0aa38b456e7ecf96907343bbab",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -957,20 +957,21 @@
         },
         {
             "name": "mcfedr/awspushbundle",
-            "version": "2.1.2",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/awspushbundle.git",
-                "reference": "9f29ed01ab9be475cb06990513de6ef264bd0118"
+                "reference": "47f1cf822a1b3e32ca5b934c7ba4a2177bab67c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/9f29ed01ab9be475cb06990513de6ef264bd0118",
-                "reference": "9f29ed01ab9be475cb06990513de6ef264bd0118",
+                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/47f1cf822a1b3e32ca5b934c7ba4a2177bab67c9",
+                "reference": "47f1cf822a1b3e32ca5b934c7ba4a2177bab67c9",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "~2.4",
+                "ext-mbstring": "*",
                 "php": ">=5.4.0",
                 "symfony/symfony": "~2.0"
             },
@@ -1001,7 +1002,7 @@
                 "notification",
                 "push"
             ],
-            "time": "2013-12-12 13:20:53"
+            "time": "2013-12-12 20:28:42"
         },
         {
             "name": "monolog/monolog",
