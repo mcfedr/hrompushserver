@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ea3a0b0aa38b456e7ecf96907343bbab",
+    "hash": "6dddf4daa621c6470f95877f86386fa4",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -957,23 +957,23 @@
         },
         {
             "name": "mcfedr/awspushbundle",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/awspushbundle.git",
-                "reference": "47f1cf822a1b3e32ca5b934c7ba4a2177bab67c9"
+                "reference": "610809bfa0339e66e66c021ec834e411917893b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/47f1cf822a1b3e32ca5b934c7ba4a2177bab67c9",
-                "reference": "47f1cf822a1b3e32ca5b934c7ba4a2177bab67c9",
+                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/610809bfa0339e66e66c021ec834e411917893b8",
+                "reference": "610809bfa0339e66e66c021ec834e411917893b8",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "~2.4",
                 "ext-mbstring": "*",
                 "php": ">=5.4.0",
-                "symfony/symfony": "~2.0"
+                "symfony/symfony": "~2.3"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -1002,7 +1002,57 @@
                 "notification",
                 "push"
             ],
-            "time": "2013-12-12 20:28:42"
+            "time": "2013-12-12 21:49:09"
+        },
+        {
+            "name": "mcfedr/twitterpushbundle",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mcfedr/twitterpushbundle.git",
+                "reference": "5b57ec67e07359dd2c27ad5658002aba0c612bfc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/5b57ec67e07359dd2c27ad5658002aba0c612bfc",
+                "reference": "5b57ec67e07359dd2c27ad5658002aba0c612bfc",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/guzzle": "~3.7",
+                "mcfedr/awspushbundle": "~2.1.5",
+                "php": ">=5.4.0",
+                "symfony/symfony": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "mcfedr\\TwitterPushBundle": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fred Cox",
+                    "email": "mcfedr@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A bundle for pushing tweets are push notifications",
+            "keywords": [
+                "apns",
+                "bundle",
+                "c2dm",
+                "gcm",
+                "ios",
+                "notification",
+                "push",
+                "twitter"
+            ],
+            "time": "2013-12-12 21:59:21"
         },
         {
             "name": "monolog/monolog",
