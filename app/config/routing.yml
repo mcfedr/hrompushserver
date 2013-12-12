@@ -1,4 +1,4 @@
 mcfedr_twitter_push:
-    resource: "@mcfedrHromPushBundle/Controller/"
+    resource: "@mcfedrTwitterPushBundle/Controller/"
     type:     annotation
     prefix:   /
