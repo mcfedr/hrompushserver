@@ -2,8 +2,3 @@ mcfedr_hrom_push:
     resource: "@mcfedrHromPushBundle/Controller/"
     type:     annotation
     prefix:   /
-
-ekreative_push:
-    resource: "@ekreativeAWSPushBundle/Controller/"
-    type:     annotation
-    prefix:   /

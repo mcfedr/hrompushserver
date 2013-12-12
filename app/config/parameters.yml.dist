@@ -23,3 +23,5 @@ parameters:
     hrom_twitter_token: ~
     hrom_twitter_token_secret: ~
     hrom_username: ~
+    hrom_userid: ~
+    hrom_store: ~

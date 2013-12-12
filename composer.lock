@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "99692233e7f7550a95bb58ee73631377",
+    "hash": "679993b1ded2470da44ca9b9e883bd1d",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -957,16 +957,16 @@
         },
         {
             "name": "mcfedr/awspushbundle",
-            "version": "1.0.0",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/awspushbundle.git",
-                "reference": "b5273f8bff63bab7f9cbbfb53700baed48cdc625"
+                "reference": "9f29ed01ab9be475cb06990513de6ef264bd0118"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/b5273f8bff63bab7f9cbbfb53700baed48cdc625",
-                "reference": "b5273f8bff63bab7f9cbbfb53700baed48cdc625",
+                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/9f29ed01ab9be475cb06990513de6ef264bd0118",
+                "reference": "9f29ed01ab9be475cb06990513de6ef264bd0118",
                 "shasum": ""
             },
             "require": {
@@ -977,7 +977,7 @@
             "type": "symfony-bundle",
             "autoload": {
                 "psr-0": {
-                    "ekreative\\AWSPushBundle": "src/"
+                    "mcfedr\\AWSPushBundle": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1001,7 +1001,7 @@
                 "notification",
                 "push"
             ],
-            "time": "2013-12-11 11:59:18"
+            "time": "2013-12-12 13:20:53"
         },
         {
             "name": "monolog/monolog",

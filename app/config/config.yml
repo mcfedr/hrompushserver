@@ -68,7 +68,7 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-ekreative_aws_push:
+mcfedr_aws_push:
     platforms: "%push_platforms%"
     aws:
         key: "%push_aws_key%"
@@ -82,4 +82,5 @@ mcfedr_hrom_push:
         token: "%hrom_twitter_token%"
         token_secret: "%hrom_twitter_token_secret%"
     username: "%hrom_username%"
+    userid: "%hrom_userid%"
     store: "%hrom_store%"
