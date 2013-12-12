@@ -81,6 +81,4 @@ mcfedr_hrom_push:
         consumer_secret: "%hrom_twitter_consumer_secret%"
         token: "%hrom_twitter_token%"
         token_secret: "%hrom_twitter_token_secret%"
-    username: "%hrom_username%"
     userid: "%hrom_userid%"
-    store: "%hrom_store%"
