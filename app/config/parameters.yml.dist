@@ -18,8 +18,8 @@ parameters:
     push_aws_key: ~
     push_aws_secret: ~
     push_aws_region: ~
-    hrom_twitter_consumer_key: ~
-    hrom_twitter_consumer_secret: ~
-    hrom_twitter_token: ~
-    hrom_twitter_token_secret: ~
-    hrom_userid: ~
+    mcfedr_twitter_consumer_key: ~
+    mcfedr_twitter_consumer_secret: ~
+    mcfedr_twitter_token: ~
+    mcfedr_twitter_token_secret: ~
+    mcfedr_userid: ~

@@ -75,10 +75,10 @@ mcfedr_aws_push:
         secret: "%push_aws_secret%"
         region: "%push_aws_region%"
 
-mcfedr_hrom_push:
+mcfedr_twitter_push:
     twitter:
-        consumer_key: "%hrom_twitter_consumer_key%"
-        consumer_secret: "%hrom_twitter_consumer_secret%"
-        token: "%hrom_twitter_token%"
-        token_secret: "%hrom_twitter_token_secret%"
-    userid: "%hrom_userid%"
+        consumer_key: "%mcfedr_twitter_consumer_key%"
+        consumer_secret: "%mcfedr_twitter_consumer_secret%"
+        token: "%mcfedr_twitter_token%"
+        token_secret: "%mcfedr_twitter_token_secret%"
+    userid: "%mcfedr_userid%"
