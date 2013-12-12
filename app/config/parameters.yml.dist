@@ -1,0 +1,25 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     symfony
+    database_user:     root
+    database_password: ~
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+    push_platforms: ~
+    push_aws_key: ~
+    push_aws_secret: ~
+    push_aws_region: ~
+    hrom_twitter_consumer_key: ~
+    hrom_twitter_consumer_secret: ~
+    hrom_twitter_token: ~
+    hrom_twitter_token_secret: ~
+    hrom_username: ~
