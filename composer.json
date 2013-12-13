@@ -20,7 +20,7 @@
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
         "mcfedr/awspushbundle": "~2.1.6",
-        "mcfedr/twitterpushbundle": "~1.0.9"
+        "mcfedr/twitterpushbundle": "~1.0.10"
     },
     "scripts": {
         "post-install-cmd": [
