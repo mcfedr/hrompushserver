@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "bc18237dc9aa0520fd83215903243bab",
+    "hash": "1a4fe987b881287fecf90ce30ccc0fd2",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -1006,16 +1006,16 @@
         },
         {
             "name": "mcfedr/twitterpushbundle",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/twitterpushbundle.git",
-                "reference": "7e41ce41e65b4d7783857b8a1a3b18d4e91c6209"
+                "reference": "81bd5670e676fc4b98d727452b64d55fa376ee0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/7e41ce41e65b4d7783857b8a1a3b18d4e91c6209",
-                "reference": "7e41ce41e65b4d7783857b8a1a3b18d4e91c6209",
+                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/81bd5670e676fc4b98d727452b64d55fa376ee0d",
+                "reference": "81bd5670e676fc4b98d727452b64d55fa376ee0d",
                 "shasum": ""
             },
             "require": {
@@ -1052,7 +1052,7 @@
                 "push",
                 "twitter"
             ],
-            "time": "2013-12-13 08:21:00"
+            "time": "2013-12-13 08:43:35"
         },
         {
             "name": "monolog/monolog",
