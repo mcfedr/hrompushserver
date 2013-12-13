@@ -3,24 +3,24 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "fac95eb6c6388e584265240674c9901f",
+    "hash": "bc18237dc9aa0520fd83215903243bab",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "2.4.11",
+            "version": "2.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e8421b7a9da3f0a6fddcc6ffb10e21b86348ba0d"
+                "reference": "61eaf675b7de9ce8b2c6b44317b01e6818ea16c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e8421b7a9da3f0a6fddcc6ffb10e21b86348ba0d",
-                "reference": "e8421b7a9da3f0a6fddcc6ffb10e21b86348ba0d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/61eaf675b7de9ce8b2c6b44317b01e6818ea16c3",
+                "reference": "61eaf675b7de9ce8b2c6b44317b01e6818ea16c3",
                 "shasum": ""
             },
             "require": {
-                "guzzle/guzzle": "~3.7.0",
+                "guzzle/guzzle": ">=3.7.0,<3.9.0",
                 "php": ">=5.3.3"
             },
             "require-dev": {
@@ -71,7 +71,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2013-11-26 20:13:01"
+            "time": "2013-12-12 19:35:51"
         },
         {
             "name": "doctrine/annotations",
@@ -692,16 +692,16 @@
         },
         {
             "name": "guzzle/guzzle",
-            "version": "v3.7.4",
+            "version": "v3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "b170b028c6bb5799640e46c8803015b0f9a45ed9"
+                "reference": "b4a3ce8c05e777fa18b802956d5d0e38ad338a69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b170b028c6bb5799640e46c8803015b0f9a45ed9",
-                "reference": "b170b028c6bb5799640e46c8803015b0f9a45ed9",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b4a3ce8c05e777fa18b802956d5d0e38ad338a69",
+                "reference": "b4a3ce8c05e777fa18b802956d5d0e38ad338a69",
                 "shasum": ""
             },
             "require": {
@@ -745,7 +745,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.7-dev"
+                    "dev-master": "3.8-dev"
                 }
             },
             "autoload": {
@@ -780,7 +780,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2013-10-02 20:47:00"
+            "time": "2013-12-05 23:39:20"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1006,16 +1006,16 @@
         },
         {
             "name": "mcfedr/twitterpushbundle",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/twitterpushbundle.git",
-                "reference": "5dc7aadfbd68646c727fec82e88883a8169c9eaf"
+                "reference": "7e41ce41e65b4d7783857b8a1a3b18d4e91c6209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/5dc7aadfbd68646c727fec82e88883a8169c9eaf",
-                "reference": "5dc7aadfbd68646c727fec82e88883a8169c9eaf",
+                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/7e41ce41e65b4d7783857b8a1a3b18d4e91c6209",
+                "reference": "7e41ce41e65b4d7783857b8a1a3b18d4e91c6209",
                 "shasum": ""
             },
             "require": {
@@ -1052,7 +1052,7 @@
                 "push",
                 "twitter"
             ],
-            "time": "2013-12-12 22:08:17"
+            "time": "2013-12-13 08:21:00"
         },
         {
             "name": "monolog/monolog",
