@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "aa7ee2b53679738f6695eb67c1054d1e",
+    "hash": "44a10fdddc65006a8de31185dff8b4b1",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -957,16 +957,16 @@
         },
         {
             "name": "mcfedr/awspushbundle",
-            "version": "2.1.5",
+            "version": "2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/awspushbundle.git",
-                "reference": "610809bfa0339e66e66c021ec834e411917893b8"
+                "reference": "225b1006d046d9a8f937c0d00f96a31797e7ea19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/610809bfa0339e66e66c021ec834e411917893b8",
-                "reference": "610809bfa0339e66e66c021ec834e411917893b8",
+                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/225b1006d046d9a8f937c0d00f96a31797e7ea19",
+                "reference": "225b1006d046d9a8f937c0d00f96a31797e7ea19",
                 "shasum": ""
             },
             "require": {
@@ -1002,20 +1002,20 @@
                 "notification",
                 "push"
             ],
-            "time": "2013-12-12 21:49:09"
+            "time": "2013-12-13 10:05:51"
         },
         {
             "name": "mcfedr/twitterpushbundle",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/twitterpushbundle.git",
-                "reference": "a608ded3622eb0f4cc05ae4ec80a695a433bc376"
+                "reference": "4559f54409cfc50d4d6a048cc755403cd966ea1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/a608ded3622eb0f4cc05ae4ec80a695a433bc376",
-                "reference": "a608ded3622eb0f4cc05ae4ec80a695a433bc376",
+                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/4559f54409cfc50d4d6a048cc755403cd966ea1b",
+                "reference": "4559f54409cfc50d4d6a048cc755403cd966ea1b",
                 "shasum": ""
             },
             "require": {
@@ -1052,7 +1052,7 @@
                 "push",
                 "twitter"
             ],
-            "time": "2013-12-13 09:22:45"
+            "time": "2013-12-13 10:05:26"
         },
         {
             "name": "monolog/monolog",
