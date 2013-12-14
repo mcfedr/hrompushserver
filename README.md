@@ -1,4 +1,3 @@
-# Push server for Hromadske tv app
+# Push server for Hromadske.tv app
 
-does stuff...
-
+Sends push notifications to the Hromadske.tv apps.
