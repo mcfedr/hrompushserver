@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7679a2286606a6b7b0babedf918708b0",
+    "hash": "45237893f643a0db05db3a26f42b5a28",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -957,16 +957,16 @@
         },
         {
             "name": "mcfedr/awspushbundle",
-            "version": "2.1.6",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/awspushbundle.git",
-                "reference": "225b1006d046d9a8f937c0d00f96a31797e7ea19"
+                "reference": "4c225de59ed3182eb727adc32fa0e729c8f9e50d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/225b1006d046d9a8f937c0d00f96a31797e7ea19",
-                "reference": "225b1006d046d9a8f937c0d00f96a31797e7ea19",
+                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/4c225de59ed3182eb727adc32fa0e729c8f9e50d",
+                "reference": "4c225de59ed3182eb727adc32fa0e729c8f9e50d",
                 "shasum": ""
             },
             "require": {
@@ -994,6 +994,7 @@
             ],
             "description": "A set of services to simplify using AWS to send push notifications",
             "keywords": [
+                "SNS",
                 "apns",
                 "bundle",
                 "c2dm",
@@ -1002,20 +1003,20 @@
                 "notification",
                 "push"
             ],
-            "time": "2013-12-13 10:05:51"
+            "time": "2014-02-01 14:04:50"
         },
         {
             "name": "mcfedr/twitterpushbundle",
-            "version": "1.0.10",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/twitterpushbundle.git",
-                "reference": "424c359ce5a45a62ce7f2eb23ff348a4828708bd"
+                "reference": "6629032c74c81b6970ef2d7e5f57d66a679858a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/424c359ce5a45a62ce7f2eb23ff348a4828708bd",
-                "reference": "424c359ce5a45a62ce7f2eb23ff348a4828708bd",
+                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/6629032c74c81b6970ef2d7e5f57d66a679858a6",
+                "reference": "6629032c74c81b6970ef2d7e5f57d66a679858a6",
                 "shasum": ""
             },
             "require": {
@@ -1052,7 +1053,7 @@
                 "push",
                 "twitter"
             ],
-            "time": "2013-12-13 11:47:35"
+            "time": "2014-02-01 13:55:12"
         },
         {
             "name": "monolog/monolog",
