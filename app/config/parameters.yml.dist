@@ -23,3 +23,4 @@ parameters:
     mcfedr_twitter_token: ~
     mcfedr_twitter_token_secret: ~
     mcfedr_userid: ~
+    admin_password: ~

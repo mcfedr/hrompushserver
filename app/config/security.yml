@@ -10,7 +10,7 @@ security:
         in_memory:
             memory:
                 users:
-                    admin: { password: M76z85PweU14gW8, roles: [ 'ROLE_ADMIN' ] }
+                    admin: { password: "%admin_password%", roles: [ 'ROLE_ADMIN' ] }
 
     firewalls:
         broadcast:
