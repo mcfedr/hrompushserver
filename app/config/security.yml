@@ -15,9 +15,8 @@ security:
     firewalls:
         broadcast:
             pattern:  ^/broadcast
-            anonymous: ~
-            http_basic:
-                realm: "Broadcast"
+            stateless: true
+            http_basic: ~
 
     access_control:
         - { path: ^/broadcast, roles: MCFEDR_AWS_BROADCAST }
