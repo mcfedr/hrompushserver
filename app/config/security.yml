@@ -15,8 +15,9 @@ security:
     firewalls:
         broadcast:
             pattern:  ^/broadcast
+            anonymous: ~
             http_basic:
                 realm: "Broadcast"
 
     access_control:
-        #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+        - { path: ^/broadcast, roles: MCFEDR_AWS_BROADCAST }
