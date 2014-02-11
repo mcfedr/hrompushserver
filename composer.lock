@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "45237893f643a0db05db3a26f42b5a28",
+    "hash": "702a3a6c8a862193aa3837deeef5a6a3",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -221,16 +221,16 @@
         },
         {
             "name": "doctrine/collections",
-            "version": "v1.1",
+            "version": "v1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "560f29c39cfcfbcd210e5d549d993a39d898b04b"
+                "reference": "b99c5c46c87126201899afe88ec490a25eedd6a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/560f29c39cfcfbcd210e5d549d993a39d898b04b",
-                "reference": "560f29c39cfcfbcd210e5d549d993a39d898b04b",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/b99c5c46c87126201899afe88ec490a25eedd6a2",
+                "reference": "b99c5c46c87126201899afe88ec490a25eedd6a2",
                 "shasum": ""
             },
             "require": {
@@ -239,7 +239,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -253,7 +253,7 @@
             ],
             "authors": [
                 {
-                    "name": "Jonathan H. Wage",
+                    "name": "Jonathan Wage",
                     "email": "jonwage@gmail.com",
                     "homepage": "http://www.jwage.com/",
                     "role": "Creator"
@@ -285,7 +285,7 @@
                 "collections",
                 "iterator"
             ],
-            "time": "2013-03-07 12:15:54"
+            "time": "2014-02-03 23:07:43"
         },
         {
             "name": "doctrine/common",
@@ -616,16 +616,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.4.1",
+            "version": "v2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "84373d05a4198ec380918d535abf83c454c3867f"
+                "reference": "0363a5548d9263f979f9ca149decb9cfc66419ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/84373d05a4198ec380918d535abf83c454c3867f",
-                "reference": "84373d05a4198ec380918d535abf83c454c3867f",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/0363a5548d9263f979f9ca149decb9cfc66419ab",
+                "reference": "0363a5548d9263f979f9ca149decb9cfc66419ab",
                 "shasum": ""
             },
             "require": {
@@ -688,7 +688,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2013-11-12 12:40:13"
+            "time": "2014-02-08 16:35:09"
         },
         {
             "name": "guzzle/guzzle",
@@ -957,16 +957,16 @@
         },
         {
             "name": "mcfedr/awspushbundle",
-            "version": "2.1.8",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/awspushbundle.git",
-                "reference": "4c225de59ed3182eb727adc32fa0e729c8f9e50d"
+                "reference": "4f5b0a7f09d9706ead7578c424ae637091a4e18b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/4c225de59ed3182eb727adc32fa0e729c8f9e50d",
-                "reference": "4c225de59ed3182eb727adc32fa0e729c8f9e50d",
+                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/4f5b0a7f09d9706ead7578c424ae637091a4e18b",
+                "reference": "4f5b0a7f09d9706ead7578c424ae637091a4e18b",
                 "shasum": ""
             },
             "require": {
@@ -1003,25 +1003,25 @@
                 "notification",
                 "push"
             ],
-            "time": "2014-02-01 14:04:50"
+            "time": "2014-02-07 11:40:26"
         },
         {
             "name": "mcfedr/twitterpushbundle",
-            "version": "2.0.0",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/twitterpushbundle.git",
-                "reference": "6629032c74c81b6970ef2d7e5f57d66a679858a6"
+                "reference": "37557925ac93608fc711ed101b8edac3f1d0f356"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/6629032c74c81b6970ef2d7e5f57d66a679858a6",
-                "reference": "6629032c74c81b6970ef2d7e5f57d66a679858a6",
+                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/37557925ac93608fc711ed101b8edac3f1d0f356",
+                "reference": "37557925ac93608fc711ed101b8edac3f1d0f356",
                 "shasum": ""
             },
             "require": {
                 "guzzle/guzzle": "~3.7",
-                "mcfedr/awspushbundle": "~2.1.5",
+                "mcfedr/awspushbundle": "~2.2",
                 "php": ">=5.4.0",
                 "symfony/symfony": "~2.3"
             },
@@ -1053,7 +1053,7 @@
                 "push",
                 "twitter"
             ],
-            "time": "2014-02-01 13:55:12"
+            "time": "2014-02-07 12:29:51"
         },
         {
             "name": "monolog/monolog",

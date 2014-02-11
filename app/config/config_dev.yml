@@ -20,6 +20,8 @@ monolog:
         console:
             type:   console
             bubble: false
+            verbosity_levels:
+                VERBOSITY_NORMAL: DEBUG
         # uncomment to get logging in your browser
         # you may have to allow bigger header sizes in your Web server configuration
         #firephp:
@@ -34,3 +36,9 @@ assetic:
 
 #swiftmailer:
 #    delivery_address: me@example.com
+
+mcfedr_aws_push:
+    debug: true
+
+mcfedr_twitter_push:
+    userid: 1298288976
