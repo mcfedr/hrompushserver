@@ -3,7 +3,7 @@ security:
         Symfony\Component\Security\Core\User\User: plaintext
 
     role_hierarchy:
-        ROLE_ADMIN:       ROLE_USER, MCFEDR_AWS_BROADCAST
+        ROLE_ADMIN:       ROLE_USER, ROLE_MCFEDR_AWS_BROADCAST
         ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
 
     providers:
@@ -19,4 +19,4 @@ security:
             http_basic: ~
 
     access_control:
-        - { path: ^/broadcast, roles: MCFEDR_AWS_BROADCAST }
+        - { path: ^/broadcast, roles: ROLE_MCFEDR_AWS_BROADCAST }
