@@ -15,6 +15,7 @@ parameters:
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     push_platforms: ~
+    push_topic: ~
     push_aws_key: ~
     push_aws_secret: ~
     push_aws_region: ~

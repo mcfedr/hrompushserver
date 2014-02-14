@@ -70,6 +70,7 @@ swiftmailer:
 
 mcfedr_aws_push:
     platforms: "%push_platforms%"
+    topic_name: "%push_topic%"
     aws:
         key: "%push_aws_key%"
         secret: "%push_aws_secret%"
