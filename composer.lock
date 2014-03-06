@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "702a3a6c8a862193aa3837deeef5a6a3",
+    "hash": "f9fd951f5cd6ef38996950541ae011db",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "2.5.2",
+            "version": "2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f720d799ea385f86ef33966908a1217dda5e49ce"
+                "reference": "de3dc8b9c7ce8ec70fc6184a8b3b4aff6728ae17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f720d799ea385f86ef33966908a1217dda5e49ce",
-                "reference": "f720d799ea385f86ef33966908a1217dda5e49ce",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/de3dc8b9c7ce8ec70fc6184a8b3b4aff6728ae17",
+                "reference": "de3dc8b9c7ce8ec70fc6184a8b3b4aff6728ae17",
                 "shasum": ""
             },
             "require": {
@@ -71,7 +71,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2014-01-30 00:45:15"
+            "time": "2014-02-27 20:50:34"
         },
         {
             "name": "doctrine/annotations",
@@ -957,16 +957,16 @@
         },
         {
             "name": "mcfedr/awspushbundle",
-            "version": "2.2.0",
+            "version": "2.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/awspushbundle.git",
-                "reference": "4f5b0a7f09d9706ead7578c424ae637091a4e18b"
+                "reference": "691a930ccd88bcf498f2d0b081bce3e195f55032"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/4f5b0a7f09d9706ead7578c424ae637091a4e18b",
-                "reference": "4f5b0a7f09d9706ead7578c424ae637091a4e18b",
+                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/691a930ccd88bcf498f2d0b081bce3e195f55032",
+                "reference": "691a930ccd88bcf498f2d0b081bce3e195f55032",
                 "shasum": ""
             },
             "require": {
@@ -1003,25 +1003,25 @@
                 "notification",
                 "push"
             ],
-            "time": "2014-02-07 11:40:26"
+            "time": "2014-03-03 16:01:46"
         },
         {
             "name": "mcfedr/twitterpushbundle",
-            "version": "2.0.2",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/twitterpushbundle.git",
-                "reference": "37557925ac93608fc711ed101b8edac3f1d0f356"
+                "reference": "d03944ec13fbebe78a01cb8c469b1dcadb5e2c25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/37557925ac93608fc711ed101b8edac3f1d0f356",
-                "reference": "37557925ac93608fc711ed101b8edac3f1d0f356",
+                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/d03944ec13fbebe78a01cb8c469b1dcadb5e2c25",
+                "reference": "d03944ec13fbebe78a01cb8c469b1dcadb5e2c25",
                 "shasum": ""
             },
             "require": {
                 "guzzle/guzzle": "~3.7",
-                "mcfedr/awspushbundle": "~2.2",
+                "mcfedr/awspushbundle": "~2.4",
                 "php": ">=5.4.0",
                 "symfony/symfony": "~2.3"
             },
@@ -1053,7 +1053,50 @@
                 "push",
                 "twitter"
             ],
-            "time": "2014-02-07 12:29:51"
+            "time": "2014-02-27 11:57:53"
+        },
+        {
+            "name": "mcfedr/youtubelivestreamsbundle",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mcfedr/youtubelivestreamsbundle.git",
+                "reference": "b1ad0671fe1fa4625b13977ebc8b17f3d3765412"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mcfedr/youtubelivestreamsbundle/zipball/b1ad0671fe1fa4625b13977ebc8b17f3d3765412",
+                "reference": "b1ad0671fe1fa4625b13977ebc8b17f3d3765412",
+                "shasum": ""
+            },
+            "require": {
+                "guzzle/guzzle": "~3.7",
+                "php": ">=5.4.0",
+                "symfony/symfony": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "mcfedr\\YouTube\\LiveStreamsBundle": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fred Cox",
+                    "email": "mcfedr@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A bundle for fetching a list of live streams",
+            "keywords": [
+                "livestreams",
+                "youtube"
+            ],
+            "time": "2014-03-06 19:19:31"
         },
         {
             "name": "monolog/monolog",
@@ -1471,17 +1514,17 @@
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "target-dir": "Symfony/Bundle/MonologBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/MonologBundle.git",
-                "reference": "29a17a347dfc41aed34ce9b72cceaf375635c408"
+                "reference": "71ad844ac29401f86619f9d643393265451e858b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/29a17a347dfc41aed34ce9b72cceaf375635c408",
-                "reference": "29a17a347dfc41aed34ce9b72cceaf375635c408",
+                "url": "https://api.github.com/repos/symfony/MonologBundle/zipball/71ad844ac29401f86619f9d643393265451e858b",
+                "reference": "71ad844ac29401f86619f9d643393265451e858b",
                 "shasum": ""
             },
             "require": {
@@ -1514,7 +1557,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -1527,7 +1572,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2014-01-19 13:23:40"
+            "time": "2014-02-19 14:49:26"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -1573,7 +1618,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -1586,16 +1633,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.4.1",
+            "version": "v2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "377a5fb23bfdc2fb616610b7b7ab7cc9a50e614d"
+                "reference": "b70633f92ff71ef490af4c17e7ca3f3bf3d0f304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/377a5fb23bfdc2fb616610b7b7ab7cc9a50e614d",
-                "reference": "377a5fb23bfdc2fb616610b7b7ab7cc9a50e614d",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/b70633f92ff71ef490af4c17e7ca3f3bf3d0f304",
+                "reference": "b70633f92ff71ef490af4c17e7ca3f3bf3d0f304",
                 "shasum": ""
             },
             "require": {
@@ -1683,7 +1730,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -1695,7 +1744,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-01-05 02:12:11"
+            "time": "2014-02-12 19:27:03"
         },
         {
             "name": "twig/extensions",
@@ -1746,16 +1795,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.15.0",
+            "version": "v1.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "85e4ff98000157ff753d934b9f13659a953f5666"
+                "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/85e4ff98000157ff753d934b9f13659a953f5666",
-                "reference": "85e4ff98000157ff753d934b9f13659a953f5666",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/1fb5784662f438d7d96a541e305e28b812e2eeed",
+                "reference": "1fb5784662f438d7d96a541e305e28b812e2eeed",
                 "shasum": ""
             },
             "require": {
@@ -1779,11 +1828,19 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com"
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "https://github.com/fabpot/Twig/graphs/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -1791,7 +1848,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-12-06 07:47:10"
+            "time": "2014-02-13 10:19:29"
         }
     ],
     "packages-dev": [
