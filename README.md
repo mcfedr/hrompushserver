@@ -1,3 +1,3 @@
-# Push server for Hromadske.tv app
+# Push server for HromadskeTV app
 
-Sends push notifications to the Hromadske.tv apps.
+Sends push notifications to the HromadskeTV apps.
