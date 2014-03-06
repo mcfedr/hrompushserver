@@ -6,6 +6,13 @@ framework:
         resource: "%kernel.root_dir%/config/routing_dev.yml"
         strict_requirements: true
     profiler: { only_exceptions: false }
+    templating:
+        engines: ['twig', 'php']
+
+# Twig Configuration
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"
 
 web_profiler:
     toolbar: true
@@ -31,14 +38,11 @@ monolog:
         #    type:   chromephp
         #    level:  info
 
-assetic:
-    use_controller: true
-
-#swiftmailer:
-#    delivery_address: me@example.com
-
 mcfedr_aws_push:
     debug: true
 
 mcfedr_twitter_push:
     userid: 1298288976
+
+mcfedr_you_tube_live_streams:
+    cache_timeout: 0
