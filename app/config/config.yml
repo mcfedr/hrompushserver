@@ -83,3 +83,8 @@ mcfedr_twitter_push:
         token: "%mcfedr_twitter_token%"
         token_secret: "%mcfedr_twitter_token_secret%"
     userid: "%mcfedr_userid%"
+
+mcfedr_you_tube_live_streams:
+    api_key: "%mcfedr_youtube_api_key%"
+    channel_id: "%mcfedr_youtube_channel_id%"
+    cache_timeout: "%mcfedr_youtube_cache_timeout%"

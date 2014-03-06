@@ -2,3 +2,8 @@ mcfedr_aws_push:
     resource: "@mcfedrAWSPushBundle/Controller/"
     type:     annotation
     prefix:   /
+
+mcfedr_you_tube_live_streams:
+        resource: "@mcfedrYouTubeLiveStreamsBundle/Controller/"
+        type:     annotation
+        prefix:   /

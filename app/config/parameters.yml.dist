@@ -25,3 +25,6 @@ parameters:
     mcfedr_twitter_token_secret: ~
     mcfedr_userid: ~
     admin_password: ~
+    mcfedr_youtube_api_key: ~
+    mcfedr_youtube_channel_id: ~
+    mcfedr_youtube_cache_timeout: ~
