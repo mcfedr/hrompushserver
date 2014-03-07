@@ -724,16 +724,16 @@
         },
         {
             "name": "mcfedr/youtubelivestreamsbundle",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/youtubelivestreamsbundle.git",
-                "reference": "ba4666816a2e83c30e83507b4a8b64ba1b9f3f64"
+                "reference": "4988bdd8c0ccf7b4c81387db0d124d8004f7d109"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/youtubelivestreamsbundle/zipball/ba4666816a2e83c30e83507b4a8b64ba1b9f3f64",
-                "reference": "ba4666816a2e83c30e83507b4a8b64ba1b9f3f64",
+                "url": "https://api.github.com/repos/mcfedr/youtubelivestreamsbundle/zipball/4988bdd8c0ccf7b4c81387db0d124d8004f7d109",
+                "reference": "4988bdd8c0ccf7b4c81387db0d124d8004f7d109",
                 "shasum": ""
             },
             "require": {
@@ -763,7 +763,7 @@
                 "livestreams",
                 "youtube"
             ],
-            "time": "2014-03-06 20:04:35"
+            "time": "2014-03-07 12:06:38"
         },
         {
             "name": "monolog/monolog",
