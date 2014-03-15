@@ -724,19 +724,20 @@
         },
         {
             "name": "mcfedr/youtubelivestreamsbundle",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/youtubelivestreamsbundle.git",
-                "reference": "f150d5f671bb4565c1191d32368c64b63e9ba74f"
+                "reference": "cfb1526dc8400c23630af4a8b204f42ad83f9e37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/youtubelivestreamsbundle/zipball/f150d5f671bb4565c1191d32368c64b63e9ba74f",
-                "reference": "f150d5f671bb4565c1191d32368c64b63e9ba74f",
+                "url": "https://api.github.com/repos/mcfedr/youtubelivestreamsbundle/zipball/cfb1526dc8400c23630af4a8b204f42ad83f9e37",
+                "reference": "cfb1526dc8400c23630af4a8b204f42ad83f9e37",
                 "shasum": ""
             },
             "require": {
+                "doctrine/cache": "1.3",
                 "guzzle/guzzle": "~3.7",
                 "php": ">=5.4.0",
                 "symfony/symfony": "~2.3"
@@ -763,7 +764,7 @@
                 "livestreams",
                 "youtube"
             ],
-            "time": "2014-03-07 12:49:34"
+            "time": "2014-03-15 22:36:36"
         },
         {
             "name": "monolog/monolog",
