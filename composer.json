@@ -15,7 +15,7 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "mcfedr/awspushbundle": "~2.4",
+        "mcfedr/awspushbundle": "~3.0",
         "mcfedr/twitterpushbundle": "~2.2",
         "mcfedr/youtubelivestreamsbundle": "~1.0"
     },

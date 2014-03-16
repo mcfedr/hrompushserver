@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "18ca8b16395630bd20da8814353bcc45",
+    "hash": "fc9d0ac69d0c02d7ae8cdd85a586a9f5",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -624,16 +624,16 @@
         },
         {
             "name": "mcfedr/awspushbundle",
-            "version": "2.4.6",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/awspushbundle.git",
-                "reference": "5d47faab589fd92b56816d608e88148a8cd7e6bf"
+                "reference": "a916b26dddce5c339ed910b19188320aca158b9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/5d47faab589fd92b56816d608e88148a8cd7e6bf",
-                "reference": "5d47faab589fd92b56816d608e88148a8cd7e6bf",
+                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/a916b26dddce5c339ed910b19188320aca158b9b",
+                "reference": "a916b26dddce5c339ed910b19188320aca158b9b",
                 "shasum": ""
             },
             "require": {
@@ -670,25 +670,25 @@
                 "notification",
                 "push"
             ],
-            "time": "2014-03-06 21:08:39"
+            "time": "2014-03-16 20:17:07"
         },
         {
             "name": "mcfedr/twitterpushbundle",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/twitterpushbundle.git",
-                "reference": "f0a4e983996339f68a69b64851ff7a685dfa70d9"
+                "reference": "d4b7c8e127eb38dd99052cc7f220c4ff22101485"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/f0a4e983996339f68a69b64851ff7a685dfa70d9",
-                "reference": "f0a4e983996339f68a69b64851ff7a685dfa70d9",
+                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/d4b7c8e127eb38dd99052cc7f220c4ff22101485",
+                "reference": "d4b7c8e127eb38dd99052cc7f220c4ff22101485",
                 "shasum": ""
             },
             "require": {
                 "guzzle/guzzle": "~3.7",
-                "mcfedr/awspushbundle": "~2.4",
+                "mcfedr/awspushbundle": ">=2.4,<4.0",
                 "php": ">=5.4.0",
                 "symfony/symfony": "~2.3"
             },
@@ -720,7 +720,7 @@
                 "push",
                 "twitter"
             ],
-            "time": "2014-03-06 20:06:20"
+            "time": "2014-03-16 20:19:55"
         },
         {
             "name": "mcfedr/youtubelivestreamsbundle",
