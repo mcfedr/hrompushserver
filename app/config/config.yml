@@ -30,6 +30,7 @@ mcfedr_aws_push:
         key: "%push_aws_key%"
         secret: "%push_aws_secret%"
         region: "%push_aws_region%"
+    cache: "hrom.cache"
 
 mcfedr_twitter_push:
     twitter:
@@ -42,4 +43,10 @@ mcfedr_twitter_push:
 mcfedr_you_tube_live_streams:
     api_key: "%mcfedr_youtube_api_key%"
     channel_id: "%mcfedr_youtube_channel_id%"
+    cache: "hrom.cache"
     cache_timeout: "%mcfedr_youtube_cache_timeout%"
+
+services:
+    hrom.cache:
+        class: Doctrine\Common\Cache\FilesystemCache
+        arguments: ["%kernel.cache_dir%/hrom"]
