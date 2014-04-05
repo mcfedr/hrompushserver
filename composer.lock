@@ -624,16 +624,16 @@
         },
         {
             "name": "mcfedr/awspushbundle",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/awspushbundle.git",
-                "reference": "e1bff928f87137c70f2321c49a90e285642ae96f"
+                "reference": "d960d042d87b8ee6d4edb0bd5e4550f2a7d9257d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/e1bff928f87137c70f2321c49a90e285642ae96f",
-                "reference": "e1bff928f87137c70f2321c49a90e285642ae96f",
+                "url": "https://api.github.com/repos/mcfedr/awspushbundle/zipball/d960d042d87b8ee6d4edb0bd5e4550f2a7d9257d",
+                "reference": "d960d042d87b8ee6d4edb0bd5e4550f2a7d9257d",
                 "shasum": ""
             },
             "require": {
@@ -670,7 +670,7 @@
                 "notification",
                 "push"
             ],
-            "time": "2014-04-05 13:19:33"
+            "time": "2014-04-05 19:20:35"
         },
         {
             "name": "mcfedr/twitterpushbundle",
