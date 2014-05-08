@@ -7,12 +7,18 @@ parameters:
     push_aws_key: ~
     push_aws_secret: ~
     push_aws_region: ~
+
     mcfedr_twitter_consumer_key: ~
     mcfedr_twitter_consumer_secret: ~
     mcfedr_twitter_token: ~
     mcfedr_twitter_token_secret: ~
     mcfedr_userid: ~
+
     admin_password: ~
+
     mcfedr_youtube_api_key: ~
     mcfedr_youtube_channel_id: ~
     mcfedr_youtube_cache_timeout: ~
+
+    mcfedr_hromadske_radio_host: ~
+    mcfedr_hromadske_radio_stream: ~

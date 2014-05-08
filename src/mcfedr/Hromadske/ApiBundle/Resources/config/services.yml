@@ -1,0 +1,3 @@
+parameters:
+    mcfedr_hromadske_api.radio.host: ''
+    mcfedr_hromadske_api.radio.stream: ''

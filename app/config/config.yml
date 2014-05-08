@@ -50,3 +50,8 @@ services:
     hrom.cache:
         class: Doctrine\Common\Cache\FilesystemCache
         arguments: ["%kernel.cache_dir%/hrom"]
+
+mcfedr_hromadske_api:
+    radio:
+        host: "%mcfedr_hromadske_radio_host%"
+        stream: "%mcfedr_hromadske_radio_stream%"
