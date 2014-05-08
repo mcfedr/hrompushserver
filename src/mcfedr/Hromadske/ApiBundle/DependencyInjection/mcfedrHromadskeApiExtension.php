@@ -25,7 +25,6 @@ class mcfedrHromadskeApiExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        $container->setParameter('mcfedr_hromadske_api.radio.host', $config['radio']['host']);
-        $container->setParameter('mcfedr_hromadske_api.radio.stream', $config['radio']['stream']);
+        $container->setParameter('mcfedr_hromadske_api.radio', $config['radio']);
     }
 }

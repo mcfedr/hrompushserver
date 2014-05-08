@@ -20,5 +20,4 @@ parameters:
     mcfedr_youtube_channel_id: ~
     mcfedr_youtube_cache_timeout: ~
 
-    mcfedr_hromadske_radio_host: ~
-    mcfedr_hromadske_radio_stream: ~
+    mcfedr_hromadske_radio: ~

@@ -20,10 +20,7 @@ class DefaultController extends Controller
         return new JsonResponse(
             [
                 'streams' => $this->get('mcfedr_you_tube_live_streams.loader')->getStreams(),
-                'radio' => [
-                    'host' => $this->container->getParameter('mcfedr_hromadske_api.radio.host'),
-                    'stream' => $this->container->getParameter('mcfedr_hromadske_api.radio.stream')
-                ]
+                'radio' => array_values($this->container->getParameter('mcfedr_hromadske_api.radio'))
             ]
         );
     }

@@ -52,6 +52,5 @@ services:
         arguments: ["%kernel.cache_dir%/hrom"]
 
 mcfedr_hromadske_api:
-    radio:
-        host: "%mcfedr_hromadske_radio_host%"
-        stream: "%mcfedr_hromadske_radio_stream%"
+    radio: "%mcfedr_hromadske_radio%"
+
