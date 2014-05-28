@@ -7,7 +7,8 @@
         "psr-0": { "": "src/" }
     },
     "require": {
-        "php": ">=5.3.3",
+        "php": "~5.5.0",
+        "ext-apcu": "*",
         "symfony/symfony": "~2.4",
         "twig/extensions": "~1.0",
         "symfony/monolog-bundle": "~2.4",
