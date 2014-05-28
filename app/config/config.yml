@@ -54,3 +54,5 @@ services:
 mcfedr_hromadske_api:
     radio: "%mcfedr_hromadske_radio%"
 
+mcfedr_hromadske_news:
+    homepage: "%mcfedr_hromadske_homepage%"

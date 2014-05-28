@@ -20,4 +20,9 @@ parameters:
     mcfedr_youtube_channel_id: ~
     mcfedr_youtube_cache_timeout: ~
 
-    mcfedr_hromadske_radio: ~
+    mcfedr_hromadske_radio:
+        -
+            host: 94.45.135.158
+            stream: HrAudio_aac
+
+    mcfedr_hromadske_homepage: "http://www.hromadske.tv/"

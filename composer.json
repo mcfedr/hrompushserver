@@ -18,7 +18,9 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "mcfedr/awspushbundle": "~3.0",
         "mcfedr/twitterpushbundle": "~2.2",
-        "mcfedr/youtubelivestreamsbundle": "~1.0"
+        "mcfedr/youtubelivestreamsbundle": "~1.0",
+        "guzzlehttp/guzzle": "~4.1",
+        "phpunit/phpunit": "~4.1"
     },
     "scripts": {
         "post-install-cmd": [

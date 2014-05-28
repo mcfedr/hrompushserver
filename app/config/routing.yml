@@ -1,3 +1,8 @@
+mcfedr_hromadske_news:
+    resource: "@mcfedrHromadskeNewsBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 mcfedr_hromadske_api:
     resource: "@mcfedrHromadskeApiBundle/Controller/"
     type:     annotation
