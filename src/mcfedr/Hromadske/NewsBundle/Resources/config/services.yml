@@ -3,7 +3,7 @@ parameters:
 
 services:
     mcfedr_hromadske_news.crawler.news:
-        class: mcfedr\Hromadske\NewsBundle\Crawler\News
+        class: mcfedr\Hromadske\NewsBundle\Crawler\NewsCrawler
         arguments:
             - "%mcfedr_hromadske_news.homepage
             - @logger
