@@ -22,30 +22,46 @@ class NewsCrawler
      * @param string $homepage
      * @param LoggerInterface $logger
      */
-    function __construct($homepage, LoggerInterface $logger)
+    public function __construct($homepage, LoggerInterface $logger)
     {
         $this->homepage = $homepage;
         $this->logger = $logger;
     }
 
+    /**
+     * @return News[]
+     */
     public function fetchNews()
     {
-        $client = new \GuzzleHttp\Client();
-        /** @var ResponseInterface $res */
-        $res = $client->get($this->homepage);
+        $res = \GuzzleHttp\get($this->homepage);
 
         $news = [];
 
         $crawler = new Crawler((string) $res->getBody(), $this->homepage);
-        $crawler->filter('.aside-news-list > li > a')
+        $crawler->filter('ul.aside-news-list > li > a:first-child')
             ->each(function(Crawler $node, $i) use (&$news) {
-                $news[] = new News(
-                    $node->attr('href'),
-                    new \DateTime(($date = $node->filter('.date')->text()) == 'щойно' ? 'now' : $date, new \DateTimeZone('Europe/Kiev')),
-                    $node->filter('.content')->text()
-                );
+                try {
+                    $new = new News(
+                        $node->attr('href'),
+                        new \DateTime(
+                            ($date = $node->filter('.date')->text()) == 'щойно' ? 'now' : $date,
+                            new \DateTimeZone('Europe/Kiev')
+                        ),
+                        $node->filter('.content')->text()
+                    );
+                    $news[] = $new;
+                    $this->logger->debug('Found news', [
+                        'new' => $new
+                    ]);
+                }
+                catch (\Exception $e) {
+                    $this->logger->info('Error parsing news', [
+                        'e' => $e,
+                        'node' => $node->html()
+                    ]);
+                }
             });
 
         return $news;
     }
-} 
+}

@@ -14,7 +14,7 @@ class NewsCrawlerTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->news = new NewsCrawler('http://www.hromadske.tv/', $this->getMock('Monolog\Logger', null, ['main']));
+        $this->news = new NewsCrawler('http://www.hromadske.tv/', $this->getMock('Psr\Log\LoggerInterface'));
     }
 
     public function testFetch()
