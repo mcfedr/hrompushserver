@@ -44,3 +44,6 @@ mcfedr_twitter_push:
 
 mcfedr_you_tube_live_streams:
     cache_timeout: 0
+
+mcfedr_hromadske_news:
+    cache_timeout: 0

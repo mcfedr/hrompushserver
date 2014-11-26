@@ -47,7 +47,7 @@ mcfedr_you_tube_live_streams:
 
 services:
     hrom.cache:
-        class: Doctrine\Common\Cache\FilesystemCache
+        class: Doctrine\Common\Cache\ApcCache
         arguments: ["%kernel.cache_dir%/hrom"]
 
 mcfedr_hromadske_api:
