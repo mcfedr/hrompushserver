@@ -8,7 +8,7 @@
     },
     "require": {
         "php": ">=5.5",
-        "ext-apcu": "*",
+        "ext-apc": "*",
         "symfony/symfony": "~2.4",
         "twig/extensions": "~1.0",
         "symfony/monolog-bundle": "~2.4",
