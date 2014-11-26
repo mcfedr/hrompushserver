@@ -5,8 +5,9 @@
 
 namespace Mcfedr\Hromadske\NewsBundle\Crawler;
 
+use Doctrine\Common\Cache\Cache;
 use GuzzleHttp\Client;
-use GuzzleHttp\Message\ResponseInterface;
+use GuzzleHttp\Message\Response;
 use Mcfedr\Hromadske\NewsBundle\Model\News;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DomCrawler\Crawler;
@@ -20,10 +21,22 @@ class NewsCrawler
     private $homepage;
 
     /**
+     * @var Cache
+     */
+    protected $cache;
+
+    /**
+     * @var int
+     */
+    protected $cacheTimeout;
+
+    /**
      * @param string $homepage
      * @param LoggerInterface $logger
+     * @param Cache $cache
+     * @param int $cacheTimeout
      */
-    public function __construct($homepage, LoggerInterface $logger)
+    public function __construct($homepage, LoggerInterface $logger, Cache $cache = null, $cacheTimeout = 0)
     {
         $this->homepage = $homepage;
         $this->logger = $logger;
@@ -34,7 +47,15 @@ class NewsCrawler
      */
     public function fetchNews()
     {
+        if ($this->cache) {
+            $data = $this->cache->fetch($this->getCacheKey());
+            if ($data !== false) {
+                return $data;
+            }
+        }
+
         $client = new Client();
+        /** @var Response $res */
         $res = $client->get($this->homepage);
 
         $news = [];
@@ -64,6 +85,15 @@ class NewsCrawler
                 }
             });
 
+        if ($this->cache && $this->cacheTimeout > 0) {
+            $this->cache->save($this->getCacheKey(), $news, $this->cacheTimeout);
+        }
+
         return $news;
+    }
+
+    protected function getCacheKey()
+    {
+        return "mcfedr_hromadske_news.{$this->homepage}";
     }
 }

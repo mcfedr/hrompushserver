@@ -20,7 +20,9 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('mcfedr_hromadske_news')
             ->children()
-                ->scalarNode('homepage')
+                ->scalarNode('homepage')->end()
+                ->scalarNode("cache")->end()
+                ->integerNode("cache_timeout")->min(0)->end()
             ->end()
         ->end();
 

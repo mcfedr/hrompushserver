@@ -1,9 +1,2 @@
 parameters:
     mcfedr_hromadske_news.homepage: ~
-
-services:
-    mcfedr_hromadske_news.crawler.news:
-        class: Mcfedr\Hromadske\NewsBundle\Crawler\NewsCrawler
-        arguments:
-            - "%mcfedr_hromadske_news.homepage%"
-            - @logger

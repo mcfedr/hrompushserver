@@ -4,6 +4,8 @@ namespace Mcfedr\Hromadske\NewsBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\Definition;
+use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader;
 
@@ -26,5 +28,20 @@ class McfedrHromadskeNewsExtension extends Extension
         $loader->load('services.yml');
 
         $container->setParameter('mcfedr_hromadske_news.homepage', $config['homepage']);
+
+        $args = [
+            $container->getParameter('mcfedr_hromadske_news.homepage'),
+            new Reference('logger')
+        ];
+
+        if (isset($config['cache'])) {
+            $args[] = new Reference($config['cache']);
+            $args[] = isset($config['cache_timeout']) ? $config['cache_timeout'] : 3600;
+        }
+
+        $container->setDefinition(
+            'mcfedr_hromadske_news.crawler.news',
+            new Definition('Mcfedr\Hromadske\NewsBundle\Crawler\NewsCrawler', $args)
+        );
     }
 }
