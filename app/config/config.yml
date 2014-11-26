@@ -47,8 +47,7 @@ mcfedr_you_tube_live_streams:
 
 services:
     hrom.cache:
-        class: Doctrine\Common\Cache\ApcCache
-        arguments: ["%kernel.cache_dir%/hrom"]
+        class: Doctrine\Common\Cache\ArrayCache
 
 mcfedr_hromadske_api:
     radio: "%mcfedr_hromadske_radio%"
