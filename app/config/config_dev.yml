@@ -41,6 +41,7 @@ mcfedr_aws_push:
 
 mcfedr_twitter_push:
     userid: 1298288976
+    max_pushes_per_hour: 0
 
 mcfedr_you_tube_live_streams:
     cache_timeout: 0

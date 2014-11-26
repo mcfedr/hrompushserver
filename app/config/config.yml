@@ -33,26 +33,28 @@ mcfedr_aws_push:
 
 mcfedr_twitter_push:
     twitter:
-        consumer_key: "%mcfedr_twitter_consumer_key%"
-        consumer_secret: "%mcfedr_twitter_consumer_secret%"
-        token: "%mcfedr_twitter_token%"
-        token_secret: "%mcfedr_twitter_token_secret%"
-    userid: "%mcfedr_userid%"
+        consumer_key: "%twitter_consumer_key%"
+        consumer_secret: "%twitter_consumer_secret%"
+        token: "%twitter_token%"
+        token_secret: "%twitter_token_secret%"
+    userid: "%twitter_userid%"
+    max_pushes_per_hour: "%twitter_max_pushes_per_hour%"
+    cache: hrom.cache
 
 mcfedr_you_tube_live_streams:
-    api_key: "%mcfedr_youtube_api_key%"
-    channel_id: "%mcfedr_youtube_channel_id%"
+    api_key: "%youtube_api_key%"
+    channel_id: "%youtube_channel_id%"
     cache: "hrom.cache"
-    cache_timeout: "%mcfedr_youtube_cache_timeout%"
+    cache_timeout: "%cache_timeout%"
+
+mcfedr_hromadske_api:
+    radio: "%hromadske_radio%"
+
+mcfedr_hromadske_news:
+    homepage: "%hromadske_homepage%"
+    cache: "hrom.cache"
+    cache_timeout: "%cache_timeout%"
 
 services:
     hrom.cache:
         class: Doctrine\Common\Cache\ArrayCache
-
-mcfedr_hromadske_api:
-    radio: "%mcfedr_hromadske_radio%"
-
-mcfedr_hromadske_news:
-    homepage: "%mcfedr_hromadske_homepage%"
-    cache: "hrom.cache"
-    cache_timeout: "%mcfedr_youtube_cache_timeout%"

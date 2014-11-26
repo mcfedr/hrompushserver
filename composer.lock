@@ -993,16 +993,16 @@
         },
         {
             "name": "mcfedr/twitterpushbundle",
-            "version": "3.1.0",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcfedr/twitterpushbundle.git",
-                "reference": "215ca229a33cf786b0e5f62cb05e0fad2c7b4976"
+                "reference": "6140b1b0abdf666f1568b72403b513f43df6b9ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/215ca229a33cf786b0e5f62cb05e0fad2c7b4976",
-                "reference": "215ca229a33cf786b0e5f62cb05e0fad2c7b4976",
+                "url": "https://api.github.com/repos/mcfedr/twitterpushbundle/zipball/6140b1b0abdf666f1568b72403b513f43df6b9ce",
+                "reference": "6140b1b0abdf666f1568b72403b513f43df6b9ce",
                 "shasum": ""
             },
             "require": {
@@ -1056,7 +1056,7 @@
                 "push",
                 "twitter"
             ],
-            "time": "2014-11-26 09:14:20"
+            "time": "2014-11-26 22:36:42"
         },
         {
             "name": "mcfedr/youtubelivestreamsbundle",

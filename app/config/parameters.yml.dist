@@ -8,21 +8,23 @@ parameters:
     push_aws_secret: secret
     push_aws_region: eu-west-1
 
-    mcfedr_twitter_consumer_key: key
-    mcfedr_twitter_consumer_secret: secret
-    mcfedr_twitter_token: token
-    mcfedr_twitter_token_secret: secret
-    mcfedr_userid: userid
+    twitter_consumer_key: key
+    twitter_consumer_secret: secret
+    twitter_token: token
+    twitter_token_secret: secret
+    twitter_userid: userid
+    twitter_max_pushes_per_hour: 0
 
     admin_password: ~
 
-    mcfedr_youtube_api_key: key
-    mcfedr_youtube_channel_id: channelId
-    mcfedr_youtube_cache_timeout: 3600
+    youtube_api_key: key
+    youtube_channel_id: channelId
 
-    mcfedr_hromadske_radio:
+    cache_timeout: 3600
+
+    hromadske_radio:
         -
             host: 94.45.135.158
             stream: HrAudio_aac
 
-    mcfedr_hromadske_homepage: "http://www.hromadske.tv/"
+    hromadske_homepage: "http://www.hromadske.tv/"
