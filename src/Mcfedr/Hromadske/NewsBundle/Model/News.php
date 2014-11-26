@@ -3,7 +3,7 @@
  * Created by mcfedr on 28/05/2014 22:55
  */
 
-namespace mcfedr\Hromadske\NewsBundle\Model;
+namespace Mcfedr\Hromadske\NewsBundle\Model;
 
 class News implements \JsonSerializable
 {
@@ -96,4 +96,4 @@ class News implements \JsonSerializable
             'title' => $this->getTitle()
         ];
     }
-} 
+}

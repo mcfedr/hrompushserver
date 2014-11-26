@@ -1,5 +1,5 @@
 mcfedr_hromadske_api:
-    resource: "@mcfedrHromadskeApiBundle/Controller/"
+    resource: "@McfedrHromadskeApiBundle/Controller/"
     type:     annotation
     prefix:   /
 

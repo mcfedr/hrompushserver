@@ -1,6 +1,6 @@
 <?php
 
-namespace mcfedr\Hromadske\NewsBundle\DependencyInjection;
+namespace Mcfedr\Hromadske\NewsBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

@@ -3,9 +3,9 @@
  * Created by mcfedr on 28/05/2014 22:31
  */
 
-namespace mcfedr\Hromadske\NewsBundle\Tests\Crawler;
+namespace Mcfedr\Hromadske\NewsBundle\Tests\Crawler;
 
-use mcfedr\Hromadske\NewsBundle\Crawler\NewsCrawler;
+use Mcfedr\Hromadske\NewsBundle\Crawler\NewsCrawler;
 
 class NewsCrawlerTest extends \PHPUnit_Framework_TestCase
 {
@@ -22,7 +22,7 @@ class NewsCrawlerTest extends \PHPUnit_Framework_TestCase
         $news = $this->news->fetchNews();
         $this->assertInternalType('array', $news);
         foreach ($news as $new) {
-            $this->assertInstanceOf('\mcfedr\Hromadske\NewsBundle\Model\News', $new);
+            $this->assertInstanceOf('\Mcfedr\Hromadske\NewsBundle\Model\News', $new);
         }
     }
-} 
+}

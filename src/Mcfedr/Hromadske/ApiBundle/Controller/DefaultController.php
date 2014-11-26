@@ -1,6 +1,6 @@
 <?php
 
-namespace mcfedr\Hromadske\ApiBundle\Controller;
+namespace Mcfedr\Hromadske\ApiBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;

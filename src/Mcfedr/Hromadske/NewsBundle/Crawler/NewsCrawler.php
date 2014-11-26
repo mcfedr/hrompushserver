@@ -1,13 +1,13 @@
 <?php
 /**
- * Created by mcfedr on 28/05/2014 22:03
+ * Created by Mcfedr on 28/05/2014 22:03
  */
 
-namespace mcfedr\Hromadske\NewsBundle\Crawler;
+namespace Mcfedr\Hromadske\NewsBundle\Crawler;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Message\ResponseInterface;
-use mcfedr\Hromadske\NewsBundle\Model\News;
+use Mcfedr\Hromadske\NewsBundle\Model\News;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DomCrawler\Crawler;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace mcfedr\Hromadske\ApiBundle\Tests\Controller;
+namespace Mcfedr\Hromadske\ApiBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

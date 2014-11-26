@@ -16,8 +16,8 @@ class AppKernel extends Kernel
             new Mcfedr\AwsPushBundle\McfedrAwsPushBundle(),
             new Mcfedr\TwitterPushBundle\McfedrTwitterPushBundle(),
             new Mcfedr\YouTube\LiveStreamsBundle\McfedrYouTubeLiveStreamsBundle(),
-            new mcfedr\Hromadske\ApiBundle\mcfedrHromadskeApiBundle(),
-            new mcfedr\Hromadske\NewsBundle\mcfedrHromadskeNewsBundle(),
+            new Mcfedr\Hromadske\ApiBundle\McfedrHromadskeApiBundle(),
+            new Mcfedr\Hromadske\NewsBundle\McfedrHromadskeNewsBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

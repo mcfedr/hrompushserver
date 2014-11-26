@@ -1,6 +1,6 @@
 <?php
 
-namespace mcfedr\Hromadske\ApiBundle\DependencyInjection;
+namespace Mcfedr\Hromadske\ApiBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
