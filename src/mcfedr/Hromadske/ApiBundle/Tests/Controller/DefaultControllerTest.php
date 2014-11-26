@@ -12,6 +12,7 @@ class DefaultControllerTest extends WebTestCase
 
         $client->request('GET', '/streams');
 
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
         $this->assertTrue(
             $client->getResponse()->headers->contains(
                 'Content-Type',
@@ -41,4 +42,4 @@ class DefaultControllerTest extends WebTestCase
             $this->assertArrayHasKey('stream', $radio);
         }
     }
-} 
+}

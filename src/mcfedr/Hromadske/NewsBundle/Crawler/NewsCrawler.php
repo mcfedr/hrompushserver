@@ -5,6 +5,7 @@
 
 namespace mcfedr\Hromadske\NewsBundle\Crawler;
 
+use GuzzleHttp\Client;
 use GuzzleHttp\Message\ResponseInterface;
 use mcfedr\Hromadske\NewsBundle\Model\News;
 use Psr\Log\LoggerInterface;
@@ -33,7 +34,8 @@ class NewsCrawler
      */
     public function fetchNews()
     {
-        $res = \GuzzleHttp\get($this->homepage);
+        $client = new Client();
+        $res = $client->get($this->homepage);
 
         $news = [];
 

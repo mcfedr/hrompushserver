@@ -4,6 +4,6 @@ mcfedr_hromadske_api:
     prefix:   /
 
 mcfedr_aws_push:
-    resource: "@mcfedrAWSPushBundle/Controller/"
+    resource: "@McfedrAwsPushBundle/Controller/"
     type:     annotation
     prefix:   /

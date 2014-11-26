@@ -13,9 +13,9 @@ class AppKernel extends Kernel
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Symfony\Bundle\MonologBundle\MonologBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new mcfedr\AWSPushBundle\mcfedrAWSPushBundle(),
-            new mcfedr\TwitterPushBundle\mcfedrTwitterPushBundle(),
-            new mcfedr\YouTube\LiveStreamsBundle\mcfedrYouTubeLiveStreamsBundle(),
+            new Mcfedr\AwsPushBundle\McfedrAwsPushBundle(),
+            new Mcfedr\TwitterPushBundle\McfedrTwitterPushBundle(),
+            new Mcfedr\YouTube\LiveStreamsBundle\McfedrYouTubeLiveStreamsBundle(),
             new mcfedr\Hromadske\ApiBundle\mcfedrHromadskeApiBundle(),
             new mcfedr\Hromadske\NewsBundle\mcfedrHromadskeNewsBundle(),
         );
