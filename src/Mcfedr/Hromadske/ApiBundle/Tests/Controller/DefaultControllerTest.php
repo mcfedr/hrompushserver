@@ -10,6 +10,11 @@ class DefaultControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
+        $loaderMock = $this->getMock('Mcfedr\YouTube\LiveStreamsBundle\Streams\YouTubeStreamsLoader', ['getStreams'], [], '', false);
+        $loaderMock->expects($this->once())->method('getStreams')->willReturn([]);
+
+        $client->getContainer()->set('mcfedr_you_tube_live_streams.loader', $loaderMock);
+
         $client->request('GET', '/streams');
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
