@@ -40,6 +40,8 @@ class NewsCrawler
     {
         $this->homepage = $homepage;
         $this->logger = $logger;
+        $this->cache = $cache;
+        $this->cacheTimeout = $cacheTimeout;
     }
 
     /**

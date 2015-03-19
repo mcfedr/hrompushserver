@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('mcfedr_hromadske_news')
+        $treeBuilder->root('mcfedr_hromadske_news')
             ->children()
                 ->scalarNode('homepage')->end()
                 ->scalarNode("cache")->end()
