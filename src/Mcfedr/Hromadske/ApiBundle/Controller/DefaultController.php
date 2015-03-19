@@ -13,7 +13,7 @@ class DefaultController extends Controller
     /**
      * @Route("/streams")
      * @Method({"GET"})
-     * @Cache(expires="1 hour", public=true)
+     * @Cache(public=true, maxage=3600, smaxage=3600)
      */
     public function streamsAction()
     {
