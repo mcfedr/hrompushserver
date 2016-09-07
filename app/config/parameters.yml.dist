@@ -1,5 +1,4 @@
 parameters:
-    locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
 
     push_platforms: ~

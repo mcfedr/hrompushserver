@@ -13,9 +13,7 @@ monolog:
             level: info
         console:
             type:  console
-            verbosity_levels:
-                VERBOSITY_NORMAL: INFO
 
 services:
     hrom.cache:
-        class: Doctrine\Common\Cache\ApcCache
+        class: Doctrine\Common\Cache\ApcuCache

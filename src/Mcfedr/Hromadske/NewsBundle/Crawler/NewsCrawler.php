@@ -5,9 +5,9 @@
 
 namespace Mcfedr\Hromadske\NewsBundle\Crawler;
 
+use Carbon\Carbon;
 use Doctrine\Common\Cache\Cache;
 use GuzzleHttp\Client;
-use GuzzleHttp\Message\Response;
 use Mcfedr\Hromadske\NewsBundle\Model\News;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DomCrawler\Crawler;
@@ -57,22 +57,27 @@ class NewsCrawler
         }
 
         $client = new Client();
-        /** @var Response $res */
         $res = $client->get($this->homepage);
 
         $news = [];
 
-        $crawler = new Crawler((string) $res->getBody(), $this->homepage);
-        $crawler->filter('ul.aside-news-list > li > a:first-child')
+        $crawler = new Crawler($res->getBody()->getContents(), $this->homepage);
+
+        $pre = setlocale(LC_ALL, 0);
+        setlocale(LC_ALL, 'uk_UA');
+        
+        $crawler->filter('.content-entity-thumb')
             ->each(function(Crawler $node, $i) use (&$news) {
                 try {
+                    $dateString = ($dateString = $node->filter('.publish-time')->text()) == 'щойно' ? 'now' : $dateString;
+
+                    $dateComponents = strptime($dateString, '%e %B, %H:%M');
+                    $time = \DateTime::createFromFormat('n-j G:i', sprintf('%s-%s %s:%02s', $dateComponents['tm_mon'], $dateComponents['tm_mday'], $dateComponents['tm_hour'], $dateComponents['tm_min']), new \DateTimeZone('Europe/Kiev'));
+
                     $new = new News(
-                        $node->attr('href'),
-                        new \DateTime(
-                            ($date = $node->filter('.date')->text()) == 'щойно' ? 'now' : $date,
-                            new \DateTimeZone('Europe/Kiev')
-                        ),
-                        $node->filter('.content')->text()
+                        $node->filter('.title a')->attr('href'),
+                        $time,
+                        $node->filter('.title a')->text()
                     );
                     $news[] = $new;
                     $this->logger->debug('Found news', [
@@ -86,6 +91,8 @@ class NewsCrawler
                     ]);
                 }
             });
+
+        setlocale(LC_ALL, $pre);
 
         if ($this->cache && $this->cacheTimeout > 0) {
             $this->cache->save($this->getCacheKey(), $news, $this->cacheTimeout);

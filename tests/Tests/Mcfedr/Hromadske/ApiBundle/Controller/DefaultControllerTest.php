@@ -1,7 +1,8 @@
 <?php
 
-namespace Mcfedr\Hromadske\ApiBundle\Tests\Controller;
+namespace Tests\Mcfedr\Hromadske\ApiBundle\Controller;
 
+use Mcfedr\YouTube\LiveStreamsBundle\Streams\YouTubeStreamsLoader;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class DefaultControllerTest extends WebTestCase
@@ -10,7 +11,11 @@ class DefaultControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $loaderMock = $this->getMock('Mcfedr\YouTube\LiveStreamsBundle\Streams\YouTubeStreamsLoader', ['getStreams'], [], '', false);
+        $loaderMock = $this->getMockBuilder(YouTubeStreamsLoader::class)
+            ->disableOriginalConstructor()
+            ->setMethods(['getStreams'])
+            ->getMock();
+
         $loaderMock->expects($this->once())->method('getStreams')->willReturn([]);
 
         $client->getContainer()->set('mcfedr_you_tube_live_streams.loader', $loaderMock);

@@ -6,7 +6,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
-use Symfony\Component\HttpFoundation\JsonResponse;
 
 class DefaultController extends Controller
 {
@@ -17,7 +16,7 @@ class DefaultController extends Controller
      */
     public function streamsAction()
     {
-        return new JsonResponse(
+        return $this->json(
             [
                 'streams' => $this->get('mcfedr_you_tube_live_streams.loader')->getStreams(),
                 'radio' => array_values($this->container->getParameter('mcfedr_hromadske_api.radio')),

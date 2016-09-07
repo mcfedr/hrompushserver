@@ -3,9 +3,11 @@
  * Created by mcfedr on 28/05/2014 22:31
  */
 
-namespace Mcfedr\Hromadske\NewsBundle\Tests\Crawler;
+namespace Tests\Mcfedr\Hromadske\NewsBundle\Crawler;
 
 use Mcfedr\Hromadske\NewsBundle\Crawler\NewsCrawler;
+use Mcfedr\Hromadske\NewsBundle\Model\News;
+use Psr\Log\LoggerInterface;
 
 class NewsCrawlerTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,7 +16,7 @@ class NewsCrawlerTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->news = new NewsCrawler('http://www.hromadske.tv/', $this->getMock('Psr\Log\LoggerInterface'));
+        $this->news = new NewsCrawler('http://www.hromadske.tv/', $this->getMockBuilder(LoggerInterface::class)->getMock());
     }
 
     public function testFetch()
@@ -22,7 +24,7 @@ class NewsCrawlerTest extends \PHPUnit_Framework_TestCase
         $news = $this->news->fetchNews();
         $this->assertInternalType('array', $news);
         foreach ($news as $new) {
-            $this->assertInstanceOf('\Mcfedr\Hromadske\NewsBundle\Model\News', $new);
+            $this->assertInstanceOf(News::class, $new);
         }
     }
 }
