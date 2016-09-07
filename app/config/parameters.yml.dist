@@ -1,5 +1,5 @@
 parameters:
-    secret:            ThisTokenIsNotSoSecretChangeIt
+    secret:            ThisTokenIsNotVerySecretChangeIt
 
     push_platforms: ~
     push_topic: arn
