@@ -71,7 +71,11 @@ class NewsCrawler
                     $dateString = ($dateString = $node->filter('.publish-time')->text()) == 'щойно' ? 'now' : $dateString;
 
                     $dateComponents = strptime($dateString, '%e %B, %H:%M');
-                    $time = \DateTime::createFromFormat('n-j G:i', sprintf('%s-%s %s:%02s', $dateComponents['tm_mon'], $dateComponents['tm_mday'], $dateComponents['tm_hour'], $dateComponents['tm_min']), new \DateTimeZone('Europe/Kiev'));
+                    if ($dateComponents) {
+                        $time = \DateTime::createFromFormat('n-j G:i', sprintf('%s-%s %s:%02s', $dateComponents['tm_mon'], $dateComponents['tm_mday'], $dateComponents['tm_hour'], $dateComponents['tm_min']), new \DateTimeZone('Europe/Kiev'));
+                    } else {
+                        $time = new \DateTime();
+                    }
 
                     $new = new News(
                         $node->filter('.title a')->attr('href'),
