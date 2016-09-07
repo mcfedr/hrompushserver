@@ -5,7 +5,6 @@
 
 namespace Mcfedr\Hromadske\NewsBundle\Crawler;
 
-use Carbon\Carbon;
 use Doctrine\Common\Cache\Cache;
 use GuzzleHttp\Client;
 use Mcfedr\Hromadske\NewsBundle\Model\News;
@@ -65,7 +64,7 @@ class NewsCrawler
 
         $pre = setlocale(LC_ALL, 0);
         setlocale(LC_ALL, 'uk_UA');
-        
+
         $crawler->filter('.content-entity-thumb')
             ->each(function(Crawler $node, $i) use (&$news) {
                 try {
