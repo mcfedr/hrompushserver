@@ -27,7 +27,7 @@ class News implements \JsonSerializable
      * @param \DateTime $time
      * @param string $title
      */
-    function __construct($href, \DateTime $time, $title)
+    public function __construct($href, \DateTime $time, $title)
     {
         $this->href = $href;
         $this->time = $time;
