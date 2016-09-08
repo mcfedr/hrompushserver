@@ -4,6 +4,13 @@ imports:
 
 parameters:
     locale: en
+    twitter_max_pushes_per_hour: 1
+    cache_timeout: 3600
+    hromadske_radio:
+        -
+            host: 94.45.135.158
+            stream: HrAudio_aac
+    hromadske_homepage: 'http://www.hromadske.tv/'
 
 framework:
     #esi:             ~

@@ -12,18 +12,8 @@ parameters:
     twitter_token: token
     twitter_token_secret: secret
     twitter_userid: userid
-    twitter_max_pushes_per_hour: 0
-
+    
     admin_password: ~
 
     youtube_api_key: key
     youtube_channel_id: channelId
-
-    cache_timeout: 3600
-
-    hromadske_radio:
-        -
-            host: 94.45.135.158
-            stream: HrAudio_aac
-
-    hromadske_homepage: "http://www.hromadske.tv/"
