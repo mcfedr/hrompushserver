@@ -12,7 +12,7 @@ parameters:
     twitter_token: token
     twitter_token_secret: secret
     twitter_userid: userid
-    
+
     admin_password: ~
 
     youtube_api_key: key
